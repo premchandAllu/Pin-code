@@ -15,11 +15,11 @@ public class PINcode
 		  //Taking input from user
 		  String pincode= sc.next();
 		  
-		  String pattern="^[0-9]{6}$";
+		  String pattern="[0-9]{6}$";
 		  Pattern pattenName= Pattern.compile(pattern);
 		  Matcher m =pattenName.matcher(pincode);
 
-                sc.close();
+            sc.close();
 		  
 		  if(m.matches())
 		  { 
