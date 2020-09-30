@@ -22,12 +22,13 @@ public class PINcode
             sc.close();
 		  
 		  if(m.matches())
-		  { 
+		    { 
 			  System.out.println("Pincode is  "+pincode);
-		  }
+		      }
 		  else 
+		    { 
 			  System.out.println("Enter correct pincode");
-
-		 	  
+		    }		 	  
+		  
 	  }
 }
