@@ -2,7 +2,7 @@ package com.blz.pincode;
 import java.util.*;
 import java.util.regex.*;
 
-public class PINcode 
+public class Pincode 
   {
 	public static void main(String[] args)
 	  {  
@@ -13,9 +13,9 @@ public class PINcode
 		  System.out.println("Enter pincode");
 		  
 		  //Taking input from user
-		  String pincode= sc.next();
+		  String pincode= sc.nextLine();
 		  
-		  String pattern="[0-9]{6}$";
+		  String pattern="[0-9]{3}\s[0-9]{3}$";
 		  Pattern pattenName= Pattern.compile(pattern);
 		  Matcher m =pattenName.matcher(pincode);
 
